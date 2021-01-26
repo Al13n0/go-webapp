@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "19b8b45f-6ed9-48bc-a2ee-423cc75a4a9a",
+		"name": "GO books-list",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ADD new Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"testTitle\",\n    \"author\":\"w\",\n    \"year\":\"2020\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"books"
+					]
+				},
+				"description": "signup request"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"testTitle\",\n    \"author\":\"w\",\n    \"year\":\"2020\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"books"
+					]
+				},
+				"description": "signup request"
+			},
+			"response": []
+		},
+		{
+			"name": "GET all books",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"books"
+					]
+				},
+				"description": "signup request"
+			},
+			"response": []
+		},
+		{
+			"name": "GET one specific book {id}",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"books"
+					]
+				},
+				"description": "signup request"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE book {id}",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"books"
+					]
+				},
+				"description": "signup request"
+			},
+			"response": []
+		}
+	]
+}
